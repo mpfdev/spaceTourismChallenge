@@ -34,7 +34,7 @@ Here are some of the pictures of actual website.
 
 ![](./readme-photos/Moon.desktop.JPG)
 
-#####Tablet - view
+##### Tablet - view
 
 ![](./readme-photos/Moon.tablet.JPG)
 
@@ -44,8 +44,7 @@ Here are some of the pictures of actual website.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Space Dev Challenge](https://spacedevchallenge.netlify.app/index.html)
 
 ## My process
 
