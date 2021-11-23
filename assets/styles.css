@@ -1,0 +1,2361 @@
+:root {
+  --background: #0b0d17;
+  --heading: #d0d6f9;
+  --text: #fff;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Bellefair', serif;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 45px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 50px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7;
+  padding: 38px 15px;
+  z-index: 1;
+  position: relative;
+}
+
+.active {
+  border-bottom: 3px solid var(--text);
+  z-index: 10;
+}
+
+nav ul li a:hover:not(.active) {
+  border-bottom: 3px solid #979797;
+}
+
+nav ul li a span {
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 830px;
+  height: 93px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.menu:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0b0d1759;
+  filter: blur(2px);
+  z-index: 1;
+}
+
+.logo-icon {
+  width: 48px;
+  height: 48px;
+  margin-top: 40px;
+}
+
+.border {
+  border: 1px solid #97979750;
+  width: 473px;
+  position: relative;
+  top: 21px;
+  left: 64px;
+}
+
+/* ==== HOME ==== */
+
+.home-container {
+  background-image: url(./home/background-home-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* ==== HERO ==== */
+
+.hero-container {
+  display: flex;
+  margin: 256px 165px 0 165px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.space {
+  width: 382px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.space h5 {
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--heading);
+}
+
+.space h1 {
+  font-family: 'Bellefair', serif;
+  font-size: 150px;
+}
+
+.space p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  width: 444px;
+  text-align: justify;
+  letter-spacing: 2px;
+  color: var(--heading);
+}
+
+.explore a {
+  font-family: 'Bellefair', serif;
+  text-decoration: none;
+  padding: 119px 62px;
+  background-color: var(--text);
+  border-radius: 50%;
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: var(--background);
+  background-color: var(--heading);
+}
+
+.explore a:hover {
+  box-shadow: 0 0 0 88px #dbdbdb18;
+  transition: all 0.5s;
+}
+
+/* ==== DESTINATION ==== */
+
+.destination-container {
+  background-image: url(./destination/background-destination-desktop.jpg);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* == MOON == */
+
+.moon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 73px 166px 0 166px;
+}
+
+.moon-map h5 {
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--heading);
+}
+
+.moon-map h5 span {
+  margin-right: 30px;
+  color: #3a3d46;
+  font-weight: bold;
+}
+
+.moon-map img {
+  margin-top: 95px;
+  margin-left: 64px;
+}
+
+.moon-description {
+  display: flex;
+  flex-direction: column;
+  width: 445px;
+  height: 472px;
+  justify-content: space-between;
+  margin-left: 150px;
+}
+
+.nav-description ul {
+  list-style-type: none;
+  height: 34px;
+  width: 420px;
+}
+
+.nav-description ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+.nav-description ul li a {
+  text-decoration: none;
+  color: var(--text);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7;
+  padding-bottom: 10px;
+}
+
+.nav-description ul li a:hover:not(.active) {
+  border-bottom: 3px solid #85868b;
+}
+
+.moon-description h2 {
+  font-family: 'Bellefair', serif;
+  font-size: 100px;
+}
+
+.moon-description p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--heading);
+  letter-spacing: 1.24px;
+}
+
+.border-description {
+  border: 1px solid #383b4b;
+}
+
+.destination-description {
+  display: flex;
+  justify-content: space-around;
+}
+
+.avg-distance,
+.est-travel-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 143px;
+  height: 61px;
+}
+
+.destination-description h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.35px;
+  color: var(--heading);
+}
+
+.destination-description h1 {
+  font-family: 'Bellefair', serif;
+  font-size: 26px;
+}
+
+/* == MARS == */
+
+.mars-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 73px 166px 0 166px;
+}
+
+.mars-map h5 {
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--heading);
+}
+
+.mars-map h5 span {
+  margin-right: 30px;
+  color: #3a3d46;
+  font-weight: bold;
+}
+
+.mars-map img {
+  margin-top: 95px;
+  margin-left: 64px;
+}
+
+.mars-description {
+  display: flex;
+  flex-direction: column;
+  width: 445px;
+  height: 472px;
+  justify-content: space-between;
+  margin-left: 150px;
+}
+
+.mars-description h2 {
+  font-family: 'Bellefair', serif;
+  font-size: 100px;
+}
+
+.mars-description p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--heading);
+  letter-spacing: 1.24px;
+}
+
+.destination-description h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.35px;
+  color: var(--heading);
+}
+
+.destination-description h1 {
+  font-family: 'Bellefair', serif;
+  font-size: 26px;
+}
+
+/* == EUROPA == */
+
+.europa-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 73px 166px 0 166px;
+}
+
+.europa-map h5 {
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--heading);
+}
+
+.europa-map h5 span {
+  margin-right: 30px;
+  color: #3a3d46;
+  font-weight: bold;
+}
+
+.europa-map img {
+  margin-top: 95px;
+  margin-left: 64px;
+}
+
+.europa-description {
+  display: flex;
+  flex-direction: column;
+  width: 445px;
+  height: 472px;
+  justify-content: space-between;
+  margin-left: 150px;
+}
+
+.europa-description h2 {
+  font-family: 'Bellefair', serif;
+  font-size: 100px;
+}
+
+.europa-description p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--heading);
+  letter-spacing: 1.24px;
+}
+
+.destination-description h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.35px;
+  color: var(--heading);
+}
+
+.destination-description h1 {
+  font-family: 'Bellefair', serif;
+  font-size: 26px;
+}
+
+/* == TITAN == */
+
+.titan-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 73px 166px 0 166px;
+}
+
+.titan-map h5 {
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--heading);
+}
+
+.titan-map h5 span {
+  margin-right: 30px;
+  color: #3a3d46;
+  font-weight: bold;
+}
+
+.titan-map img {
+  margin-top: 95px;
+  margin-left: 64px;
+}
+
+.titan-description {
+  display: flex;
+  flex-direction: column;
+  width: 445px;
+  height: 472px;
+  justify-content: space-between;
+  margin-left: 150px;
+}
+
+.titan-description h2 {
+  font-family: 'Bellefair', serif;
+  font-size: 100px;
+}
+
+.titan-description p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--heading);
+  letter-spacing: 1.24px;
+}
+
+.destination-description h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.35px;
+  color: var(--heading);
+}
+
+.destination-description h1 {
+  font-family: 'Bellefair', serif;
+  font-size: 26px;
+}
+
+/* ==== CREW ==== */
+
+.crew-container {
+  background-image: url(./crew/background-crew-desktop.jpg);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* == COMMANDER == */
+
+.commander-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 130px 0 165px;
+}
+
+.commander-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.commander-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 490px;
+  height: 345px;
+}
+
+.commander-description h5 {
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--heading);
+}
+
+.commander-description h5 span {
+  color: #383b4b;
+}
+
+.commander-about h4 {
+  font-family: 'Bellefair', serif;
+  font-size: 32px;
+  color: #909196;
+}
+
+.commander-about h3 {
+  font-family: 'Bellefair', serif;
+  font-size: 56px;
+}
+
+.commander-about p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--heading);
+  letter-spacing: 2.24px;
+}
+
+.commander-navigation {
+  width: 185px;
+  height: 15px;
+  margin-bottom: 100px;
+}
+
+.commander-navigation ul {
+  list-style: none;
+}
+
+.commander-navigation ul li {
+  display: inline;
+}
+
+.commander-navigation a {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 8px;
+  background-color: #363841;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-dot {
+  background-color: white !important;
+}
+
+.commander-photo {
+  position: relative;
+  bottom: -25px;
+}
+
+.commander-photo img {
+  margin-left: 80px;
+}
+
+/* == SPECIALIST== */
+
+.specialist-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 83px 130px 0 165px;
+}
+
+.specialist-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.specialist-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 490px;
+  height: 345px;
+}
+
+.specialist-description h5 {
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--heading);
+}
+
+.specialist-description h5 span {
+  color: #383b4b;
+}
+
+.specialist-about h4 {
+  font-family: 'Bellefair', serif;
+  font-size: 32px;
+  color: #909196;
+}
+
+.specialist-about h3 {
+  font-family: 'Bellefair', serif;
+  font-size: 56px;
+  width: 615px;
+}
+
+.specialist-about p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--heading);
+  letter-spacing: 1.24px;
+  width: 444px;
+}
+
+.specialist-navigation {
+  width: 185px;
+  height: 15px;
+  margin-bottom: 100px;
+}
+
+.specialist-navigation ul {
+  list-style: none;
+}
+
+.specialist-navigation ul li {
+  display: inline;
+}
+
+.specialist-navigation a {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 8px;
+  background-color: #363841;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.specialist-photo {
+  position: relative;
+  bottom: -75px;
+}
+
+.specialist-photo img {
+  margin-left: 80px;
+}
+
+/* == PILOT == */
+
+.pilot-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 83px 130px 0 165px;
+}
+
+.pilot-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pilot-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 490px;
+  height: 345px;
+}
+
+.pilot-description h5 {
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--heading);
+}
+
+.pilot-description h5 span {
+  color: #383b4b;
+}
+
+.pilot-about h4 {
+  font-family: 'Bellefair', serif;
+  font-size: 32px;
+  color: #909196;
+}
+
+.pilot-about h3 {
+  font-family: 'Bellefair', serif;
+  font-size: 56px;
+  width: 615px;
+}
+
+.pilot-about p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--heading);
+  letter-spacing: 1.24px;
+  width: 444px;
+}
+
+.pilot-navigation {
+  width: 185px;
+  height: 15px;
+  margin-bottom: 100px;
+}
+
+.pilot-navigation ul {
+  list-style: none;
+}
+
+.pilot-navigation ul li {
+  display: inline;
+}
+
+.pilot-navigation a {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 8px;
+  background-color: #363841;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.pilot-photo {
+  position: relative;
+  bottom: -65px;
+}
+
+.pilot-photo img {
+  margin-left: 40px;
+}
+
+/* == ENGINEER == */
+
+.engineer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 83px 130px 0 165px;
+  height: 650px;
+}
+
+.engineer-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.engineer-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 490px;
+  height: 345px;
+}
+
+.engineer-description h5 {
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--heading);
+}
+
+.engineer-description h5 span {
+  color: #383b4b;
+}
+
+.engineer-about h4 {
+  font-family: 'Bellefair', serif;
+  font-size: 32px;
+  color: #909196;
+}
+
+.engineer-about h3 {
+  font-family: 'Bellefair', serif;
+  font-size: 56px;
+  width: 615px;
+}
+
+.engineer-about p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--heading);
+  letter-spacing: 1.24px;
+  width: 444px;
+}
+
+.engineer-navigation {
+  width: 185px;
+  height: 15px;
+  margin-bottom: 100px;
+}
+
+.engineer-navigation ul {
+  list-style: none;
+}
+
+.engineer-navigation ul li {
+  display: inline;
+}
+
+.engineer-navigation a {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 8px;
+  background-color: #363841;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.engineer-photo {
+  position: relative;
+  bottom: -110px;
+  height: 600px;
+}
+
+.engineer-photo img {
+  position: relative;
+  bottom: 0;
+  margin-left: 30px;
+}
+
+/* ==== TECHNOLOGY ==== */
+
+.technology-container {
+  background-image: url(./technology/background-technology-desktop.jpg);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* == LAUNCH VEHICLE == */
+
+.general-tech-container {
+  display: flex;
+  flex-direction: column;
+  margin: 76px 0 0 165px;
+}
+
+.tech-label {
+  width: 305px;
+  height: 35px;
+}
+
+.tech-label h5 {
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--heading);
+}
+
+.tech-label h5 span {
+  color: #383b4b;
+}
+
+.tech-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tech-description ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  height: 303px;
+  justify-content: space-between;
+}
+
+.tech-description ul li {
+  margin: 25px 0;
+}
+
+.tech-description a {
+  font-size: 32px;
+  padding: 15px 25px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgb(95, 95, 95);
+}
+
+.tech-description a:hover:not(.active-col-menu) {
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.active-col-menu {
+  background-color: white;
+  color: var(--background) !important;
+}
+
+.tech-description-about {
+  width: 470px;
+  height: 303px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 60px 0 35px;
+}
+
+.tech-title {
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--heading);
+}
+
+.tech-description-about h3 {
+  font-family: 'Bellefair', serif;
+  font-size: 56px;
+  width: 470px;
+}
+
+.tech-about-text {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--heading);
+  letter-spacing: 1.75px;
+  width: 444px;
+}
+
+.tech-description-photo {
+  width: 515px;
+  height: 527px;
+  background-image: url(./technology/image-launch-vehicle-portrait.jpg);
+  background-size: cover;
+}
+
+/* == SPACEPORT == */
+
+.tech-description-photo-spaceport {
+  width: 515px;
+  height: 527px;
+  background-image: url(./technology/image-spaceport-portrait.jpg);
+  background-size: cover;
+}
+
+/* == CAPSULE == */
+
+.tech-description-photo-capsule {
+  width: 515px;
+  height: 527px;
+  background-image: url(./technology/image-space-capsule-portrait.jpg);
+  background-size: cover;
+}
+
+/* ================= RESPONSIVE DESIGN =================== */
+
+/* ==== TABLET 768 X 1024 ==== */
+
+@media (max-width: 768px) {
+  nav {
+    margin-left: 39px;
+  }
+
+  nav ul {
+    margin-left: 45px;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-right: 35px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 38px 0;
+    letter-spacing: 2px;
+  }
+
+  nav ul li a span {
+    display: none;
+  }
+
+  .logo-icon {
+    margin-top: 0;
+  }
+
+  .border {
+    display: none;
+  }
+
+  .menu {
+    margin-top: 0;
+    width: 450px;
+    height: 96px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .menu:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3a3d464d;
+    filter: blur(2px);
+    z-index: 1;
+  }
+
+  /* == HERO == */
+  .home-container {
+    background-image: url(./home/background-home-tablet.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hero-container {
+    height: 732px;
+    flex-direction: column;
+    margin: 75px 159px 0 159px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .space {
+    width: 450px;
+    height: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .space h5 {
+    font-size: 20;
+    letter-spacing: 3.38px;
+  }
+
+  .space p {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .explore {
+    position: relative;
+    bottom: 100px;
+  }
+
+  /* ==== DESTINATION ==== */
+
+  .destination-container {
+    background-image: url(./destination/background-destination-tablet.jpg);
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  .nav-description ul li a {
+    letter-spacing: 3px;
+  }
+
+  .nav-description ul {
+    margin-left: 72 px;
+    margin-top: 23 px;
+    width: 335px;
+  }
+
+  .destination-description {
+    display: flex;
+    justify-content: space-around;
+    width: 575px;
+  }
+
+  .border-description {
+    border: 1px solid #383b4b;
+    width: 575px;
+  }
+
+  /* == MOON == */
+
+  .moon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+  }
+
+  .moon-map {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .moon-map img {
+    margin-top: 62px;
+  }
+
+  .moon-map h5 {
+    position: relative;
+    left: -85px;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+
+  .moon-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    height: 390px;
+    width: 575px;
+    margin-bottom: 55px;
+  }
+
+  .moon-description p {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    line-height: 28px;
+  }
+
+  .moon-description .nav-description {
+    margin-left: 60px;
+    margin-top: 35px;
+  }
+  /* == MARS == */
+
+  .mars-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+  }
+
+  .mars-map {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .mars-map img {
+    margin-top: 62px;
+  }
+
+  .mars-map h5 {
+    position: relative;
+    left: -85px;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+
+  .mars-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    height: 390px;
+    width: 575px;
+    margin-bottom: 55px;
+  }
+
+  .mars-description p {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    line-height: 28px;
+  }
+
+  .mars-description .nav-description {
+    margin-left: 60px;
+    margin-top: 35px;
+  }
+
+  /* == EUROPA == */
+
+  .europa-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+  }
+
+  .europa-map {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .europa-map img {
+    margin-top: 62px;
+  }
+
+  .europa-map h5 {
+    position: relative;
+    left: -85px;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+
+  .europa-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    height: 390px;
+    width: 575px;
+    margin-bottom: 55px;
+  }
+
+  .europa-description p {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    line-height: 28px;
+  }
+
+  .europa-description .nav-description {
+    margin-left: 60px;
+    margin-top: 35px;
+  }
+
+  /* == TITAN == */
+
+  .titan-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+  }
+
+  .titan-map {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .titan-map img {
+    margin-top: 62px;
+  }
+
+  .titan-map h5 {
+    position: relative;
+    left: -85px;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+
+  .titan-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    height: 390px;
+    width: 575px;
+    margin-bottom: 55px;
+  }
+
+  .titan-description p {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    line-height: 28px;
+  }
+
+  .titan-description .nav-description {
+    margin-left: 60px;
+    margin-top: 35px;
+  }
+
+  /* ==== CREW ==== */
+
+  .crew-container {
+    background-image: url(./crew/background-crew-tablet.jpg);
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  /* == COMMANDER == */
+
+  .commander-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .commander-description {
+    height: 350px;
+  }
+
+  .commander-description h5 {
+    position: relative;
+    left: -256px;
+    top: -45px;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+
+  .commander-about h4 {
+    font-size: 24px;
+  }
+
+  .commander-about h3 {
+    font-size: 40px;
+  }
+
+  .commander-about p {
+    font-size: 16px;
+  }
+
+  .commander-navigation {
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .commander-navigation ul {
+    position: relative;
+    top: 28px;
+  }
+
+  .commander-photo {
+    position: relative;
+    top: -96px;
+    transform: scale(0.8);
+  }
+
+  /* == SPECEALIST == */
+
+  .specialist-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .specialist-description {
+    height: 350px;
+  }
+
+  .specialist-description h5 {
+    position: relative;
+    left: -256px;
+    top: -45px;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+
+  .specialist-about h4 {
+    font-size: 24px;
+  }
+
+  .specialist-about h3 {
+    font-size: 40px;
+    width: 483px;
+  }
+
+  .specialist-about p {
+    font-size: 16px;
+    line-height: 28px;
+    width: 483px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .specialist-navigation {
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .specialist-navigation ul {
+    position: relative;
+    top: 28px;
+  }
+
+  .specialist-photo {
+    position: relative;
+    top: -72px;
+    left: -73px;
+    transform: scale(0.8);
+  }
+
+  /* == PILOT == */
+
+  .pilot-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pilot-description {
+    height: 350px;
+  }
+
+  .pilot-description h5 {
+    position: relative;
+    left: -256px;
+    top: -45px;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+
+  .pilot-about h4 {
+    font-size: 24px;
+  }
+
+  .pilot-about h3 {
+    font-size: 40px;
+    width: 483px;
+  }
+
+  .pilot-about p {
+    font-size: 16px;
+    line-height: 28px;
+    width: 483px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .pilot-navigation {
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pilot-navigation ul {
+    position: relative;
+    top: 28px;
+  }
+
+  .pilot-photo {
+    position: relative;
+    top: -72px;
+    left: -46px;
+    transform: scale(0.8);
+  }
+
+  /* == ENGINEER == */
+
+  .engineer-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .engineer-description {
+    height: 350px;
+  }
+
+  .engineer-description h5 {
+    position: relative;
+    left: -256px;
+    top: -45px;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+
+  .engineer-about h4 {
+    font-size: 24px;
+  }
+
+  .engineer-about h3 {
+    font-size: 40px;
+    width: 483px;
+  }
+
+  .engineer-about p {
+    font-size: 16px;
+    line-height: 28px;
+    width: 483px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .engineer-navigation {
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .engineer-navigation ul {
+    position: relative;
+    top: 28px;
+  }
+
+  .engineer-photo {
+    position: relative;
+    top: -51px;
+    left: -19px;
+    transform: scale(0.8);
+  }
+
+  /* ==== TECHNOLOGY ==== */
+
+  .technology-container {
+    background-image: url(./technology/background-technology-tablet.jpg);
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  /* == LAUNCH VEHICLE == */
+
+  .general-tech-container {
+    margin: 42px 0 0 0;
+  }
+
+  .tech-label {
+    margin-left: 39px;
+  }
+
+  .tech-label h5 {
+    font-size: 20px;
+    letter-spacing: 3.38px;
+    line-height: 1px;
+  }
+
+  .tech-description {
+    flex-direction: column;
+    margin-top: 12px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 784px;
+  }
+
+  .tech-description-photo {
+    background-position: center center;
+    background-image: url(./technology/image-launch-vehicle-portrait.jpg);
+    height: 310px;
+    width: 100%;
+    order: 1;
+  }
+
+  .tech-description-menu {
+    order: 2;
+  }
+
+  .tech-description-menu ul {
+    flex-direction: row;
+    width: 210px;
+    height: 60px;
+  }
+
+  .tech-description-menu ul a {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    padding: 15px 21px;
+  }
+
+  .tech-description-about {
+    order: 3;
+    margin: 0;
+    width: 458px;
+    height: 237px;
+  }
+
+  .tech-description-about h3 {
+    font-size: 40px;
+  }
+
+  .tech-description-about p {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  /* == SPACEPORT == */
+
+  .tech-description-photo-spaceport {
+    background-position: center center;
+    background-image: url(./technology/image-spaceport-landscape.jpg);
+    height: 310px;
+    width: 100%;
+    order: 1;
+  }
+
+  /* == CAPSULE == */
+
+  .tech-description-photo-capsule {
+    background-position: center center;
+    background-image: url(./technology/image-space-capsule-landscape.jpg);
+    height: 310px;
+    width: 100%;
+    order: 1;
+  }
+}
+
+/* ==== MOBILE 375 X 667 ==== */
+
+@media (max-width: 375px) {
+  /* = RESET = */
+
+  nav ul li {
+    display: block;
+    margin: 0;
+    text-align: left;
+  }
+
+  .active {
+    border: none;
+  }
+
+  nav ul li a {
+    padding: 0;
+    color: rgb(255, 255, 255);
+    position: static;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+
+  nav ul li a span {
+    display: inline-block;
+  }
+
+  .menu {
+    display: block;
+    position: static;
+    width: 100%;
+  }
+
+  .menu::before {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    margin: 0 24px;
+  }
+  /* == NAV MOBILE == */
+
+  .nav-menu {
+    z-index: 1;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    background-color: rgb(85, 84, 84);
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.425);
+  }
+
+  .nav-menu.active {
+    left: 95px;
+    display: block;
+  }
+
+  .nav-item {
+    margin: 35px 0;
+    margin-left: 30px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .logo-icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .item-positioning {
+    margin-top: 120px;
+  }
+
+  /* == HERO == */
+
+  .home-container {
+    background-image: url(./home/background-home-mobile.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hero-container {
+    margin: 0 auto;
+    height: 615px;
+    margin-top: 35px;
+  }
+
+  .space {
+    width: 327px;
+    height: 276px;
+  }
+
+  .space h5 {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+
+  .space h1 {
+    font-size: 80px;
+  }
+
+  .space p {
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 25px;
+    width: 327px;
+    height: 125px;
+  }
+
+  .explore a {
+    font-size: 20px;
+    padding: 100px 63px;
+  }
+
+  /* ==== DESTINATION ==== */
+
+  .destination-container {
+    background-image: url(./destination/background-destination-mobile.jpg);
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  /* == MOON == */
+
+  .moon-container {
+    margin: 0;
+  }
+
+  .moon-map {
+    align-items: center;
+    height: 221px;
+  }
+
+  .moon-map h5 {
+    position: static;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+
+  .moon-map h5 span {
+    margin-right: 13px;
+  }
+
+  .moon-map img {
+    width: 170px;
+    height: 170px;
+    margin: 0;
+  }
+
+  .moon-description {
+    height: 555px;
+    margin: 0;
+    width: 370px;
+  }
+
+  .moon-description li a {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+  }
+
+  .moon-description ul {
+    width: 300px;
+  }
+
+  .moon-description ul li:last-child {
+    margin-right: 0;
+  }
+
+  .moon-description h2 {
+    font-size: 56px;
+  }
+
+  .moon-description p {
+    font-size: 15px;
+    line-height: 25px;
+    width: 327px;
+    height: 125px;
+  }
+
+  .destination-description {
+    flex-direction: column;
+    width: 375px;
+    align-items: center;
+    height: 165px;
+    justify-content: space-evenly;
+  }
+
+  .destination-description h2 {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    line-height: 1px;
+  }
+
+  .destination-description h1 {
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: 1px;
+  }
+
+  .avg-distance,
+  .est-travel-time {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .border-description {
+    width: 319px;
+  }
+
+  /* == MARS == */
+
+  .mars-container {
+    margin: 0;
+  }
+
+  .mars-map {
+    align-items: center;
+    height: 221px;
+  }
+
+  .mars-map h5 {
+    position: static;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+
+  .mars-map h5 span {
+    margin-right: 13px;
+  }
+
+  .mars-map img {
+    width: 170px;
+    height: 170px;
+    margin: 0;
+  }
+
+  .mars-description {
+    height: 555px;
+    margin: 0;
+    width: 370px;
+  }
+
+  .mars-description li a {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+  }
+
+  .mars-description ul {
+    width: 300px;
+  }
+
+  .mars-description ul li:last-child {
+    margin-right: 0;
+  }
+
+  .mars-description .nav-description {
+    margin-left: 22px;
+  }
+
+  .mars-description h2 {
+    font-size: 56px;
+  }
+
+  .mars-description p {
+    font-size: 15px;
+    line-height: 25px;
+    width: 327px;
+    height: 125px;
+  }
+  .destination-description {
+    flex-direction: column;
+    width: 375px;
+    align-items: center;
+    height: 165px;
+    justify-content: space-evenly;
+  }
+
+  .destination-description h2 {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    line-height: 1px;
+  }
+
+  .destination-description h1 {
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: 1px;
+  }
+
+  .avg-distance,
+  .est-travel-time {
+    justify-content: space-around;
+    align-items: center;
+    width: 180px;
+  }
+
+  .border-description {
+    width: 319px;
+  }
+
+  /* == EUROPA == */
+
+  .europa-container {
+    margin: 0;
+  }
+
+  .europa-map {
+    align-items: center;
+    height: 221px;
+  }
+
+  .europa-map h5 {
+    position: static;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+
+  .europa-map h5 span {
+    margin-right: 13px;
+  }
+
+  .europa-map img {
+    width: 170px;
+    height: 170px;
+    margin: 0;
+  }
+
+  .europa-description {
+    height: 555px;
+    margin: 0;
+    width: 370px;
+  }
+
+  .europa-description li a {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+  }
+
+  .europa-description ul {
+    width: 300px;
+  }
+
+  .europa-description ul li:last-child {
+    margin-right: 0;
+  }
+
+  .europa-description h2 {
+    font-size: 56px;
+  }
+
+  .europa-description p {
+    font-size: 15px;
+    line-height: 25px;
+    width: 327px;
+    height: 125px;
+  }
+  .destination-description {
+    flex-direction: column;
+    width: 375px;
+    align-items: center;
+    height: 165px;
+    justify-content: space-evenly;
+  }
+
+  .destination-description h2 {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    line-height: 1px;
+  }
+
+  .destination-description h1 {
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: 1px;
+  }
+
+  .avg-distance,
+  .est-travel-time {
+    justify-content: space-around;
+    align-items: center;
+    width: 180px;
+  }
+
+  .border-description {
+    width: 319px;
+  }
+
+  /* == TITAN == */
+
+  .titan-container {
+    margin: 0;
+  }
+
+  .titan-map {
+    align-items: center;
+    height: 221px;
+  }
+
+  .titan-map h5 {
+    position: static;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+
+  .titan-map h5 span {
+    margin-right: 13px;
+  }
+
+  .titan-map img {
+    width: 170px;
+    height: 170px;
+    margin: 0;
+  }
+
+  .titan-description {
+    height: 555px;
+    margin: 0;
+  }
+
+  .titan-description li a {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+  }
+
+  .titan-description h2 {
+    font-size: 56px;
+  }
+
+  .titan-description p {
+    font-size: 15px;
+    line-height: 25px;
+    width: 327px;
+    height: 125px;
+  }
+  .destination-description {
+    flex-direction: column;
+    width: 375px;
+    align-items: center;
+    height: 165px;
+    justify-content: space-evenly;
+  }
+
+  .destination-description h2 {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    line-height: 1px;
+  }
+
+  .destination-description h1 {
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: 1px;
+  }
+
+  .avg-distance,
+  .est-travel-time {
+    justify-content: space-around;
+    align-items: center;
+    width: 180px;
+  }
+
+  .border-description {
+    width: 319px;
+  }
+
+  /* ==== CREW ==== */
+
+  .crew-container {
+    background-image: url(./crew/background-crew-mobile.jpg);
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  /* == COMMANDER == */
+
+  .commander-container {
+    margin: 0;
+    height: 710px;
+  }
+
+  .commander-description {
+    align-items: center;
+    height: 710px;
+    width: 375px;
+  }
+
+  .commander-description h5 {
+    order: 1;
+    position: static;
+    margin-bottom: 321px;
+  }
+
+  .commander-about {
+    order: 3;
+    align-items: center;
+    justify-content: space-between;
+    width: 375px;
+  }
+
+  .commander-about h4 {
+    font-size: 16px;
+    height: 30px;
+  }
+
+  .commander-about h3 {
+    font-size: 24px;
+    height: 30px;
+  }
+
+  .commander-about p {
+    font-size: 15px;
+    line-height: 25px;
+    width: 326px;
+    height: 150px;
+  }
+
+  .commander-navigation {
+    order: 2;
+    width: 135px;
+  }
+
+  .commander-navigation a {
+    width: 12px;
+    height: 12px;
+  }
+
+  .commander-photo {
+    transform: scale(0.4);
+    top: -870px;
+  }
+
+  /* == SPECIALIST == */
+
+  .specialist-container {
+    margin: 0;
+    height: 710px;
+  }
+
+  .specialist-description {
+    align-items: center;
+    height: 710px;
+    width: 375px;
+  }
+
+  .specialist-description h5 {
+    order: 1;
+    position: static;
+    margin-bottom: 321px;
+  }
+
+  .specialist-about {
+    order: 3;
+    align-items: center;
+    justify-content: space-between;
+    width: 375px;
+  }
+
+  .specialist-about h4 {
+    font-size: 16px;
+    height: 30px;
+  }
+
+  .specialist-about h3 {
+    font-size: 24px;
+    height: 30px;
+    width: 375px;
+  }
+
+  .specialist-about p {
+    font-size: 15px;
+    line-height: 25px;
+    width: 326px;
+    height: 150px;
+  }
+
+  .specialist-navigation {
+    order: 2;
+    width: 135px;
+  }
+
+  .specialist-navigation a {
+    width: 12px;
+    height: 12px;
+  }
+
+  .specialist-photo {
+    transform: scale(0.4);
+    top: -800px;
+    margin: 0;
+    position: relative;
+    left: 17px;
+  }
+
+  /* == PILOT == */
+
+  .pilot-container {
+    margin: 0;
+    height: 710px;
+  }
+
+  .pilot-description {
+    align-items: center;
+    height: 710px;
+    width: 375px;
+  }
+
+  .pilot-description h5 {
+    order: 1;
+    position: static;
+    margin-bottom: 321px;
+  }
+
+  .pilot-about {
+    order: 3;
+    align-items: center;
+    justify-content: space-between;
+    width: 375px;
+  }
+
+  .pilot-about h4 {
+    font-size: 16px;
+    height: 30px;
+  }
+
+  .pilot-about h3 {
+    font-size: 24px;
+    height: 30px;
+    width: 375px;
+  }
+
+  .pilot-about p {
+    font-size: 15px;
+    line-height: 25px;
+    width: 326px;
+    height: 150px;
+  }
+
+  .pilot-navigation {
+    order: 2;
+    width: 135px;
+  }
+
+  .pilot-navigation a {
+    width: 12px;
+    height: 12px;
+  }
+
+  .pilot-photo {
+    transform: scale(0.4);
+    top: -800px;
+    margin: 0;
+    position: relative;
+    left: 17px;
+  }
+
+  /* == ENGINEER == */
+
+  .engineer-container {
+    margin: 0;
+    height: 710px;
+  }
+
+  .engineer-description {
+    align-items: center;
+    height: 710px;
+    width: 375px;
+  }
+
+  .engineer-description h5 {
+    order: 1;
+    position: static;
+    margin-bottom: 321px;
+  }
+
+  .engineer-about {
+    order: 3;
+    align-items: center;
+    justify-content: space-between;
+    width: 375px;
+  }
+
+  .engineer-about h4 {
+    font-size: 16px;
+    height: 30px;
+  }
+
+  .engineer-about h3 {
+    font-size: 24px;
+    height: 30px;
+    width: 375px;
+  }
+
+  .engineer-about p {
+    font-size: 15px;
+    line-height: 25px;
+    width: 326px;
+    height: 150px;
+  }
+
+  .engineer-navigation {
+    order: 2;
+    width: 135px;
+  }
+
+  .engineer-navigation a {
+    width: 12px;
+    height: 12px;
+  }
+
+  .engineer-photo {
+    transform: scale(0.4);
+    top: -800px;
+    margin: 0;
+    position: relative;
+    left: 17px;
+  }
+
+  /* ==== TECHNOLOGY ==== */
+
+  .technology-container {
+    background-image: url(./technology/background-technology-mobile.jpg);
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  /* == VEHICLE == */
+
+  .tech-description-about,
+  .tech-description-about h3,
+  .tech-about-text {
+    width: 375px;
+  }
+}
