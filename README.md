@@ -61,7 +61,11 @@ One of the massives aspects after developed this challenge is how it's hard to f
 
 A tool that really helped me was the Pesticide extension, for example below, where you can see the boxes it's wonderful such a tool.
 
-![](./readme-photos/Pesticide_Extension.JPG)
+![](./readme-photos/Pesticide_Extension2.JPG)
+
+And with some fixes
+
+![](./readme-photos/Pesticide_Extension3_Final.JPG)
 
 ### Continued development
 
